@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chain Reaction</title>
+<link rel="stylesheet" href="delta.css">
+</head>
+<body>
+
+<h1>Chain Reaction</h1>
+
+<div id="topbar">
+  <div class="player-panel p1" id="pp1">
+    <div class="pname">⬡ PLAYER 1</div>
+    <div class="pscore">Orbs: <span id="s1">0</span></div>
+    <div class="ptimer" id="t1">0:00</div>
+  </div>
+
+  <div id="mid-panel">
+    <div id="overall-timer">Total<span id="tot">0:00</span></div>
+    <button id="btn-pause" onclick="togglePause()">⏸ Pause</button>
+  </div>
+
+  <div class="player-panel p2" id="pp2">
+    <div class="pname">⬡ PLAYER 2</div>
+    <div class="pscore">Orbs: <span id="s2">0</span></div>
+    <div class="ptimer" id="t2">0:00</div>
+  </div>
+</div>
+
+<div id="grid-wrap">
+  <div id="grid"></div>
+</div>
+
+<button id="btn-restart" onclick="resetGame()">↺ New Game</button>
+
+<script src="del.js"></script>
+</body>
+</html>
